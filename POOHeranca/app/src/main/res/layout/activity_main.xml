@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Gerente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtManagerName"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Nome:"
+        app:layout_constraintStart_toStartOf="@+id/txtManager"
+        app:layout_constraintTop_toBottomOf="@+id/txtManager" />
+
+    <TextView
+        android:id="@+id/txtManagerSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Salário"
+
+        app:layout_constraintStart_toStartOf="@+id/txtManagerName"
+        app:layout_constraintTop_toBottomOf="@+id/txtManagerName" />
+
+    <TextView
+        android:id="@+id/txtManagerCommission"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Comissão"
+        app:layout_constraintStart_toStartOf="@+id/txtManagerSalary"
+        app:layout_constraintTop_toBottomOf="@+id/txtManagerSalary" />
+
+    <TextView
+        android:id="@+id/txtManagerTotalEmployees"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Total de Empregados"
+        app:layout_constraintStart_toStartOf="@+id/txtManagerCommission"
+        app:layout_constraintTop_toBottomOf="@+id/txtManagerCommission" />
+
+    <TextView
+        android:id="@+id/txtManagerAdmissionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Data de Admissão"
+        app:layout_constraintStart_toStartOf="@+id/txtManagerTotalEmployees"
+        app:layout_constraintTop_toBottomOf="@+id/txtManagerTotalEmployees" />
+
+    <TextView
+        android:id="@+id/txtEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="100dp"
+        android:text="Empregado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Nome:"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployee"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployee" />
+
+    <TextView
+        android:id="@+id/txtEmployeeSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Salário"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployeeName"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
+
+    <TextView
+        android:id="@+id/txtEmployeeAdmissionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Data de Admissão"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployeeSalary"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeSalary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
